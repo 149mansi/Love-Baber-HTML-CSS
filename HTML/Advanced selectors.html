@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectros</title>
+    <style>
+        h1{
+            background-color: rgb(235, 32, 21);
+            color: wheat;
+            text-align: center;
+            font-Weight:bold;
+         }
+
+         /* if div is contained  any li which is contained by div */
+        /* div li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold; 
+        }
+        /* if p is right inside div then this css will be applied */
+        
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+        
+        /* if p is right after div i.e is the next sibling of div  */
+        /* div + p{
+            color: white;
+            background-color: darkgoldenrod;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more Selectros</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>This is not affected</li>
+            </ul>
+            <p>This is paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

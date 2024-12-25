@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Table use css inline and INTERNAL</title>
+    <style>
+        .left{
+            background-color: rgb(255, 251, 0);
+        }
+        .right{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="400">
+        <tr>
+            <th rowspan="3" style="background-color: blue;">Day</th>
+            <th colspan="3" style="background-color: blue;">Seminar</th>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: blue;">Schedule</td>
+            <td rowspan="2" style="background-color: blue;">Topic</td>
+        </tr>
+        <tr>
+            <td style="background-color: red;">Begin</td>
+            <td style="background-color: red;">End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2" class="left">8:00am</td>
+            <td rowspan="2" class="right">5:00pm</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr><td>Validity:DTD and Relax NG</td></tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td class="left">8:00am</td>
+            <td class="right">5:00am</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td class="left">11:00am</td>
+            <td class="right">2:00pm</td>
+    </tr>
+    <tr>
+        <td class="left">3:00pm</td>
+        <td class="right">5:00pm</td>
+        <td>XSL Transformation</td>
+</tr>
+<tr>
+    <td>Wednesday</td>
+    <td class="left">8:00am</td>
+    <td class="right">12:00pm</td>
+    <td>XSL Formatting Objects</td>
+</tr>
+    </table>
+    
+</body>
+</html>

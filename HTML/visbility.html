@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 170px;
+            width: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: aqua;
+            top: 49px;
+            z-index: 35;
+            position: relative;
+        }
+        /* z-index will work only postion : relative , abosulte, fixed & sticky */
+        #box2{
+background-color: chartreuse;
+top: 14px;
+z-index: -16;
+position: relative;
+        }
+        #box3{
+ /* Will hide the element but will show its empty space */
+ /* visibility: hidden;     */
+ /* will hide the element and space */
+ /* display: none;    */
+background-color: crimson;
+
+        }
+        #box4{
+background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+</body>
+</html>

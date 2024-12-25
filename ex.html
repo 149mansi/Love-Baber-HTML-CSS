@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="play">play</button>
+    <script>
+        let play = document.getElementById("play");
+        function playMusic() {
+            let audio= new Audio("mansi.mp3")
+            audio.play()
+        }
+        play.addEventListener("click",playMusic);
+    </script>
+    input[type="range"] {
+        width:400px;
+      }
+      <form action="/" method="get">
+        Points:
+        <input type="range" name="points" min="0" max="10">
+        <input type="submit">
+      </form>
+</body>
+</html>

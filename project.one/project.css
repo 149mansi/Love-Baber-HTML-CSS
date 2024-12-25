@@ -1,0 +1,125 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* Navigation Bar: Logo and Image */
+#logo{
+margin: 10px 34px;
+
+}
+#logo img{
+    height: 59px;
+margin: 3px 6px;
+}
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(50, 44, 44);
+    top: 0px;
+    left: 0px;
+    padding: 0px 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+   background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('spoons.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Utility class */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services.box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.Services-container{
+    text-align: center;
+}
